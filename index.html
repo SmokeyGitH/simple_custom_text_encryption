@@ -39,7 +39,12 @@
             padding: 10px;
             background-color: #e9ecef;
             border: 1px solid #ced4da;
-            font-family: monospace;
+            font-family: 'Times New Roman';
+            white-space: pre-wrap;  /* Ensures that long text wraps and newlines are respected */
+            word-wrap: break-word;   /* Breaks long words if necessary */
+            overflow-wrap: break-word;
+            overflow: auto;          /* Adds scroll if content exceeds the box */
+            max-height: 200px;  
         }
     </style>
 </head>
@@ -62,3 +67,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
